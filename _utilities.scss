@@ -58,3 +58,14 @@
 @mixin letterpress($opacity){
 	text-shadow:white($opacity) 0 1px 0;
 }
+
+// Hide Text Mixin
+// Example
+// .logo{
+//		@include hide-text;
+//	}
+@mixin hide-text{
+	overflow:hidden;
+	text-indent:-9000px;
+	display:block;
+}
