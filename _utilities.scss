@@ -22,4 +22,24 @@
 
 }
 
+// Hover mixin
+@mixin hoverMixin($property, $value){
+	&:hover{
+		$property:$value;
+	};
+}
+
+// Focus mixin
+@mixin focusMixin($property, $value){
+	&:focus{
+		$property:$value;
+	};
+}
+
+// Active mixin
+@mixin activeMixin($property, $value){
+	&:active{
+		$property:$value;
+	};
+}
 
