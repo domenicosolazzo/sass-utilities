@@ -43,3 +43,18 @@
 	};
 }
 
+// Box-Emboss Effect
+@function black($opacity){
+    @return rgba(0,0,0,$opacity)
+}
+@function white($opacity){
+    @return rgba(255,255,255,$opacity)
+}
+@mixin box-emboss($opacity, $opacity2){
+	box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}
+
+// Letterpress Effect
+@mixin letterpress($opacity){
+	text-shadow:white($opacity) 0 1px 0;
+}
